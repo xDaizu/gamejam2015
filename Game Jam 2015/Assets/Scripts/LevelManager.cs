@@ -123,7 +123,7 @@ public class LevelManager : MonoBehaviour
                 }
                 //Instantiate the GameObject instance using the prefab chosen for toInstantiate at the Vector3 corresponding to current grid position in loop, cast it to GameObject.
                 GameObject instance =
-                    Instantiate(toInstantiate, new Vector3(x, y, 0f), Quaternion.identity) as GameObject;
+                    Instantiate(toInstantiate, new Vector3(x, y, 0f), toInstantiate.transform.rotation) as GameObject;
 
                 //Set the parent of our newly instantiated object instance to boardHolder, this is just organizational to avoid cluttering hierarchy.
                 instance.transform.SetParent(boardHolder);
@@ -164,8 +164,9 @@ public class LevelManager : MonoBehaviour
             //Choose a random tile from tileArray and assign it to tileChoice
             GameObject tileChoice = tileArray[Random.Range(0, tileArray.Length)];
 
+            Debug.Log("Rotando");
             //Instantiate tileChoice at the position returned by RandomPosition with no change in rotation
-            Instantiate(tileChoice, randomPosition, Quaternion.identity);
+            Instantiate(tileChoice, randomPosition, tileChoice.transform.rotation);
         }
     }
 
