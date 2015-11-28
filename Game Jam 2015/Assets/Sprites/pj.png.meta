@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f67780a07cd9a434284e44485b45a12d
-timeCreated: 1448647825
+timeCreated: 1448702262
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -25,6 +25,13 @@ TextureImporter:
     21300036: pj_18
     21300038: pj_19
     21300040: pj_20
+    21300042: flecha1
+    21300044: flecha2
+    21300046: flecha3
+    21300048: torch1
+    21300050: torch2
+    21300052: torch3
+    21300054: halo
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -280,6 +287,76 @@ TextureImporter:
         height: 51
       alignment: 9
       pivot: {x: .499999732, y: .781077683}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flecha1
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 1784
+        width: 36
+        height: 223
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flecha2
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 1784
+        width: 33
+        height: 223
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flecha3
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 1785
+        width: 33
+        height: 223
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: torch1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1488
+        width: 52
+        height: 162
+      alignment: 9
+      pivot: {x: .510282815, y: .0593525469}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: torch2
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1488
+        width: 63
+        height: 161
+      alignment: 9
+      pivot: {x: .515887558, y: .058712028}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: torch3
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 1488
+        width: 63
+        height: 161
+      alignment: 9
+      pivot: {x: .48187837, y: .0579098538}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: halo
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1438
+        width: 208
+        height: 217
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
