@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f67780a07cd9a434284e44485b45a12d
-timeCreated: 1448748400
+timeCreated: 1448745834
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -59,6 +59,12 @@ TextureImporter:
     21300104: pj_29
     21300106: pj_30
     21300108: pj_31
+    21300110: pj_32
+    21300112: pj_33
+    21300114: pj_34
+    21300116: pj_35
+    21300118: pj_36
+    21300120: pj_37
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -499,9 +505,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 221
-        y: 1164
+        y: 1141
         width: 162
-        height: 247
+        height: 307
       alignment: 9
       pivot: {x: .504571259, y: .389075637}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -509,9 +515,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 918
+        y: 885
         width: 162
-        height: 247
+        height: 306
       alignment: 9
       pivot: {x: .504571259, y: .389075637}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -628,32 +634,92 @@ TextureImporter:
     - name: pj_29
       rect:
         serializedVersion: 2
-        x: 1003
-        y: 1985
-        width: 7
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 17
+        y: 638
+        width: 368
+        height: 219
+      alignment: 9
+      pivot: {x: .497930318, y: .533038139}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: pj_30
       rect:
         serializedVersion: 2
-        x: 1496
-        y: 1317
-        width: 138
-        height: 151
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 449
+        y: 643
+        width: 366
+        height: 218
+      alignment: 9
+      pivot: {x: .5, y: .538080633}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: pj_31
       rect:
         serializedVersion: 2
-        x: 1698
-        y: 1208
-        width: 238
-        height: 288
+        x: 885
+        y: 648
+        width: 366
+        height: 218
+      alignment: 9
+      pivot: {x: .5, y: .538080633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_32
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 481
+        width: 60
+        height: 58
+      alignment: 9
+      pivot: {x: .508021057, y: .807019472}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_33
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 483
+        width: 60
+        height: 58
+      alignment: 9
+      pivot: {x: .508021057, y: .807019472}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_34
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 461
+        width: 60
+        height: 143
+      alignment: 9
+      pivot: {x: .546938062, y: .855981767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_35
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 461
+        width: 60
+        height: 143
+      alignment: 9
+      pivot: {x: .414493293, y: .867095709}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_36
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 437
+        width: 125
+        height: 174
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_37
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 436
+        width: 125
+        height: 174
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
