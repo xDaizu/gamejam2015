@@ -1,0 +1,1264 @@
+fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 49ef2abb39a0a4a438612df92dbacad3
+timeCreated: 1448727760
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName: {}
+=======
+guid: 92986db052211d64881d1255bbdfc616
+timeCreated: 1448726406
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: tilebase4_0
+    21300002: tilebase4_1
+    21300004: tilebase4_2
+    21300006: tilebase4_3
+    21300008: tilebase4_4
+    21300010: tilebase4_5
+    21300012: tilebase4_6
+    21300014: tilebase4_7
+    21300016: tilebase4_8
+    21300018: tilebase4_9
+    21300020: tilebase4_10
+    21300022: tilebase4_11
+    21300024: tilebase4_12
+    21300026: tilebase4_13
+    21300028: tilebase4_14
+    21300030: tilebase4_15
+    21300032: tilebase4_16
+    21300034: tilebase4_17
+    21300036: tilebase4_18
+    21300038: tilebase4_19
+    21300040: tilebase4_20
+    21300042: tilebase4_21
+    21300044: tilebase4_22
+    21300046: tilebase4_23
+    21300048: tilebase4_24
+    21300050: tilebase4_25
+    21300052: tilebase4_26
+    21300054: tilebase4_27
+    21300056: tilebase4_28
+    21300058: tilebase4_29
+    21300060: tilebase4_30
+    21300062: tilebase4_31
+    21300064: tilebase4_32
+    21300066: tilebase4_33
+    21300068: tilebase4_34
+    21300070: tilebase4_35
+    21300072: tilebase4_36
+    21300074: tilebase4_37
+    21300076: tilebase4_38
+    21300078: tilebase4_39
+    21300080: tilebase4_40
+    21300082: tilebase4_41
+    21300084: tilebase4_42
+    21300086: tilebase4_43
+    21300088: tilebase4_44
+    21300090: tilebase4_45
+    21300092: tilebase4_46
+    21300094: tilebase4_47
+    21300096: tilebase4_48
+    21300098: tilebase4_49
+    21300100: tilebase4_50
+    21300102: tilebase4_51
+    21300104: tilebase4_52
+    21300106: tilebase4_53
+    21300108: tilebase4_54
+    21300110: tilebase4_55
+    21300112: tilebase4_56
+    21300114: tilebase4_57
+    21300116: tilebase4_58
+    21300118: tilebase4_59
+    21300120: tilebase4_60
+    21300122: tilebase4_61
+    21300124: tilebase4_62
+    21300126: tilebase4_63
+    21300128: tilebase4_64
+    21300130: tilebase4_65
+    21300132: tilebase4_66
+    21300134: tilebase4_67
+    21300136: tilebase4_68
+    21300138: tilebase4_69
+    21300140: tilebase4_70
+    21300142: tilebase4_71
+    21300144: tilebase4_72
+    21300146: tilebase4_73
+    21300148: tilebase4_74
+    21300150: tilebase4_75
+    21300152: tilebase4_76
+    21300154: tilebase4_77
+    21300156: tilebase4_78
+    21300158: tilebase4_79
+    21300160: tilebase4_80
+    21300162: tilebase4_81
+    21300164: tilebase4_82
+    21300166: tilebase4_83
+    21300168: tilebase4_84
+    21300170: tilebase4_85
+    21300172: tilebase4_86
+    21300174: tilebase4_87
+    21300176: tilebase4_88
+    21300178: tilebase4_89
+    21300180: tilebase4_90
+    21300182: tilebase4_91
+    21300184: tilebase4_92
+    21300186: tilebase4_93
+    21300188: tilebase4_94
+    21300190: tilebase4_95
+    21300192: tilebase4_96
+    21300194: tilebase4_97
+    21300196: tilebase4_98
+    21300198: tilebase4_99
+    21300200: tilebase4_100
+    21300202: tilebase4_101
+    21300204: tilebase4_102
+    21300206: tilebase4_103
+    21300208: tilebase4_104
+    21300210: tilebase4_105
+    21300212: tilebase4_106
+    21300214: tilebase4_107
+>>>>>>> origin/master
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+<<<<<<< HEAD
+    aniso: -1
+=======
+    aniso: 16
+>>>>>>> origin/master
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+<<<<<<< HEAD
+  spriteMode: 1
+=======
+  spriteMode: 2
+>>>>>>> origin/master
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+<<<<<<< HEAD
+    sprites: []
+=======
+    sprites:
+    - name: tilebase4_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1040
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1040
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1040
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1040
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1040
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1040
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1040
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1040
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1040
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1040
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1040
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_11
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1040
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 910
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 910
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 910
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 910
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_16
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 910
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_17
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 910
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_18
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 910
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_19
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 910
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_20
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 910
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_21
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 910
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_22
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 910
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_23
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 910
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 780
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_25
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 780
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_26
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 780
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_27
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 780
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_28
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 780
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_29
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 780
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_30
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 780
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_31
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 780
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_32
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 780
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_33
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 780
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_34
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 780
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_35
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 780
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 650
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_37
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 650
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_38
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 650
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_39
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 650
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_40
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 650
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_41
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 650
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_42
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 650
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_43
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 650
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_44
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 650
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_45
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 650
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_46
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 650
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_47
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 650
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 520
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_49
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 520
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_50
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 520
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_51
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 520
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_52
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 520
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_53
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 520
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_54
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 520
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_55
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 520
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_56
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 520
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_57
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 520
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_58
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 520
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_59
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 520
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 390
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_61
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 390
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_62
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 390
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_63
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 390
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_64
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 390
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_65
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 390
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_66
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 390
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_67
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 390
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_68
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 390
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_69
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 390
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_70
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 390
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_71
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 390
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 260
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_73
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 260
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_74
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 260
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_75
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 260
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_76
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 260
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_77
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 260
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_78
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 260
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_79
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 260
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_80
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 260
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_81
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 260
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_82
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 260
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_83
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 260
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 130
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_85
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 130
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_86
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 130
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_87
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 130
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_88
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 130
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_89
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 130
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_90
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 130
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_91
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 130
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_92
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 130
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_93
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 130
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_94
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 130
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_95
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 130
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_97
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_98
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_99
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_100
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_101
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_102
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_103
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_104
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_105
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_106
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tilebase4_107
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 128.916672
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+>>>>>>> origin/master
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
