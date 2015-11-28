@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f67780a07cd9a434284e44485b45a12d
-timeCreated: 1448739042
+timeCreated: 1448748400
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -56,6 +56,9 @@ TextureImporter:
     21300098: pj_26
     21300100: pj_27
     21300102: pj_28
+    21300104: pj_29
+    21300106: pj_30
+    21300108: pj_31
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -621,6 +624,36 @@ TextureImporter:
         height: 79
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_29
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1985
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_30
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 1317
+        width: 138
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_31
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 1208
+        width: 238
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
