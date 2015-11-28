@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f67780a07cd9a434284e44485b45a12d
-timeCreated: 1448707826
+timeCreated: 1448714978
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -37,6 +37,14 @@ TextureImporter:
     21300060: Cofre2
     21300062: Cofre3
     21300064: Cofre4
+    21300066: Espada
+    21300068: BrazoD
+    21300070: pieI
+    21300072: pieD
+    21300074: BrazoI
+    21300076: Cuerpo
+    21300078: head
+    21300080: head.damage
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -412,6 +420,86 @@ TextureImporter:
         height: 177
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Espada
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1225
+        width: 49
+        height: 235
+      alignment: 9
+      pivot: {x: .499999851, y: .155772626}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BrazoD
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 1262
+        width: 58
+        height: 139
+      alignment: 9
+      pivot: {x: .418598562, y: .866077423}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pieI
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 1280
+        width: 60
+        height: 58
+      alignment: 9
+      pivot: {x: .508021057, y: .807019472}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pieD
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 1278
+        width: 60
+        height: 58
+      alignment: 9
+      pivot: {x: .508021057, y: .807019472}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BrazoI
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1257
+        width: 60
+        height: 143
+      alignment: 9
+      pivot: {x: .546938062, y: .855981767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cuerpo
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 1218
+        width: 243
+        height: 177
+      alignment: 9
+      pivot: {x: .495839566, y: .624082088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: head
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 1164
+        width: 162
+        height: 247
+      alignment: 9
+      pivot: {x: .504571259, y: .389075637}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: head.damage
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 918
+        width: 162
+        height: 247
+      alignment: 9
+      pivot: {x: .504571259, y: .389075637}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
