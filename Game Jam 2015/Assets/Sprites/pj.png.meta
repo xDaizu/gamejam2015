@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f67780a07cd9a434284e44485b45a12d
-timeCreated: 1448702262
+timeCreated: 1448707826
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -32,6 +32,11 @@ TextureImporter:
     21300050: torch2
     21300052: torch3
     21300054: halo
+    21300056: flecha_rota
+    21300058: Cofre1
+    21300060: Cofre2
+    21300062: Cofre3
+    21300064: Cofre4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -357,6 +362,56 @@ TextureImporter:
         height: 217
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flecha_rota
+      rect:
+        serializedVersion: 2
+        x: 1774
+        y: 1796
+        width: 128
+        height: 190
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cofre1
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1433
+        width: 135
+        height: 146
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cofre2
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1434
+        width: 135
+        height: 148
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cofre3
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 1436
+        width: 135
+        height: 160
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cofre4
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1421
+        width: 135
+        height: 177
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
