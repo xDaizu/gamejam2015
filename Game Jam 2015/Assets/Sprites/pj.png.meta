@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f67780a07cd9a434284e44485b45a12d
-timeCreated: 1448745834
+timeCreated: 1448749664
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -65,6 +65,11 @@ TextureImporter:
     21300116: pj_35
     21300118: pj_36
     21300120: pj_37
+    21300122: pj_38
+    21300124: pj_39
+    21300126: pj_40
+    21300128: pj_41
+    21300130: pj_42
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -720,6 +725,56 @@ TextureImporter:
         height: 174
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_38
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1985
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_39
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 1317
+        width: 138
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_40
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 1208
+        width: 238
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_41
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 327
+        width: 511
+        height: 497
+      alignment: 9
+      pivot: {x: .505753577, y: .990973353}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_42
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 592
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
