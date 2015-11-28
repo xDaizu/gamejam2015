@@ -6,6 +6,7 @@ public class CameraControl : MonoBehaviour {
     public GameObject objeto;
     public float vel = 3.0f;
     public float maxX, maxY, minX, minY;
+    private float defaultZoom = 5f;
 
     public bool zoomPos=true, zoomNeg=false;
     
@@ -32,16 +33,13 @@ public class CameraControl : MonoBehaviour {
                             vel);
         }
 
-        Debug.Log(Input.GetAxis("Mouse ScrollWheel").ToString());
         if (Input.GetAxis("Mouse ScrollWheel") > 0)
         {
-            cambioZoom(2.5f);
-            //gameObject.GetComponent<Camera>().orthographicSize = Mathf.Lerp(gameObject.GetComponent<Camera>().orthographicSize, 2.5f, 10 * Time.deltaTime);
+            cambioZoom(2.5f,10);
         }
         if (Input.GetAxis("Mouse ScrollWheel") < 0)
         {
-            cambioZoom(5f);
-            //gameObject.GetComponent<Camera>().orthographicSize = Mathf.Lerp(gameObject.GetComponent<Camera>().orthographicSize, 5f, 10 * Time.deltaTime);
+            cambioZoom(5f,10);
         }
     }
 
@@ -57,9 +55,11 @@ public class CameraControl : MonoBehaviour {
     public float GetMinY() { return this.minY; }
     public void SetMinY(float minY) { this.minY = minY; }
 
-    public void cambioZoom(float velocidad)
+    public float GetDefaultZoom() { return defaultZoom; }
+
+    public void cambioZoom(float tope,float velocidad)
     {
-        gameObject.GetComponent<Camera>().orthographicSize = Mathf.Lerp(gameObject.GetComponent<Camera>().orthographicSize, velocidad, 10 * Time.deltaTime);
+        gameObject.GetComponent<Camera>().orthographicSize = Mathf.Lerp(gameObject.GetComponent<Camera>().orthographicSize, tope, velocidad * Time.deltaTime);
     }
 }
 
