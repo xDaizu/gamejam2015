@@ -14,15 +14,18 @@ public class CameraControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (gameObject.transform.position.x < maxX && gameObject.transform.position.x > minX)
+        if (objeto.transform.position.x< maxX && objeto.transform.position.x > minX) {
+            gameObject.transform.position = Vector3.Lerp(
+                                           new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z),
+                                           new Vector3(objeto.transform.position.x, gameObject.transform.position.y, -5),
+                                           vel);
+        }
+        if (objeto.transform.position.y < maxY && objeto.transform.position.y > minY)
         {
-            if (gameObject.transform.position.y < maxY && gameObject.transform.position.y > minY)
-            {
-                gameObject.transform.position = Vector3.Lerp(
-                                new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z),
-                                new Vector3(objeto.transform.position.x, objeto.transform.position.y, -5),
-                                vel);
-            }
+            gameObject.transform.position = Vector3.Lerp(
+                            new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z),
+                            new Vector3(gameObject.transform.position.x, objeto.transform.position.y, -5),
+                            vel);
         }
     }
 
