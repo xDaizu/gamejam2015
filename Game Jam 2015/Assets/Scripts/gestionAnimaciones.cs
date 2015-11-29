@@ -14,8 +14,13 @@ public class gestionAnimaciones : MonoBehaviour {
 	
 	}
 
-    void CambiaAShield(int asd)
+    void StartInsorcism(int tipoCadaver)
     {
-        animator.SetInteger("PlayerForm", 1);
+        animator.SetInteger("PlayerForm", tipoCadaver);
+    }
+
+    void FinishInsorcism(int tipoCadaver)
+    {
+
     }
 }
