@@ -77,7 +77,7 @@ public class LevelManager : MonoBehaviour
                 //Check if we current position is at board edge, if so choose a random outer wall prefab from our array of outer wall tiles.
                 if (x == -1 || x == columns || y == -1 || y == rows)
                 {
-                    Debug.Log("x: "+x+"y: "+y);
+                    //Debug.Log("x: "+x+"y: "+y);
                     if (y == -1)
                     {
                         if (x == -1)
