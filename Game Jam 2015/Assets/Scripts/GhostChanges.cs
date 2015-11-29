@@ -3,6 +3,7 @@ using System.Collections;
 
 public class GhostChanges : MonoBehaviour {
     public Animator anima;
+
     // Use this for initialization
     void Start () {
              anima=gameObject.transform.FindChild("Ghost-Wrapper").GetComponent<Animator>();
@@ -11,7 +12,7 @@ public class GhostChanges : MonoBehaviour {
     void Update() {
         controlAndar();
     }
-
+   
     public void SetState(int newState) {
         switch(newState)
         {
@@ -79,5 +80,10 @@ public class GhostChanges : MonoBehaviour {
             print("Quieto");
             anima.SetBool("Andar", false);
         }
+    }
+    public void Revivir()
+    {
+        anima.SetBool("Muerte", false);
+        anima.SetInteger("PlayerForm", 0);
     }
 }
