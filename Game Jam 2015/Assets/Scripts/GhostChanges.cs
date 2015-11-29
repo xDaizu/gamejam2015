@@ -8,6 +8,10 @@ public class GhostChanges : MonoBehaviour {
              anima=gameObject.GetComponent<Animator>();
     }
 
+    void Update() {
+        controlAndar();
+    }
+
     public void SetState(int newState) {
         switch(newState)
         {
@@ -61,5 +65,16 @@ public class GhostChanges : MonoBehaviour {
     }
     public void desactivarAccion() {
         anima.SetBool("Action", false);
-    } 
+    }
+
+    public void controlAndar()
+    {
+        if (gameObject.GetComponent<ControlPersonaje>().h != 0 || gameObject.GetComponent<ControlPersonaje>().v != 0)
+        {
+            anima.SetBool("Andar", true);
+        }
+        else {
+            anima.SetBool("Andar", false);
+        }
+    }
 }
