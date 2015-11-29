@@ -16,7 +16,7 @@ public class DoorTrigger : MonoBehaviour
         {
             Vector3 TargetPoint = exitDoor.transform.Find("SpawnPoint").gameObject.transform.position;
             Debug.Log("Tag Player detectado, moviendo a x=" + TargetPoint.x + ", y= " + TargetPoint.y);
-            GameObject playerToMove = other.gameObject.transform.parent.gameObject;
+            GameObject playerToMove = GameObject.FindGameObjectWithTag("PlayerWrapper");
 
             playerToMove.SetActive(false);
             playerToMove.transform.position = TargetPoint;

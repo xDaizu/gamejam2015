@@ -9,7 +9,11 @@ public class TitleLoadOnClick : MonoBehaviour
     public void LoadScene(int level)
     {
         //loadingImage.SetActive(true);
-        //Application.LoadLevel(level);
+        Application.LoadLevel(level);
         Debug.Log("Seleccionado " + level);
+    }
+
+    public void Exit() {
+        Application.Quit();
     }
 }

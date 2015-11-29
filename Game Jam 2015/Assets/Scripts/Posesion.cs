@@ -36,7 +36,7 @@ public class Posesion : MonoBehaviour {
         if (formaActual == 0 && corpseType != 0)
         {
             gameObject.GetComponent<GhostChanges>().SetState(corpseType);
-            selectedCorpse.SetActive(false);
+            selectedCorpse.transform.parent.gameObject.SetActive(false);
         }
     }
 
