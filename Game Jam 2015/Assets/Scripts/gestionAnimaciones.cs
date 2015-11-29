@@ -14,8 +14,8 @@ public class gestionAnimaciones : MonoBehaviour {
 	
 	}
 
-    void AcabaPosesion()
+    void CambiaAShield(int asd)
     {
-        animator.SetBool("Attack", false);
+        animator.SetInteger("PlayerForm", 1);
     }
 }
