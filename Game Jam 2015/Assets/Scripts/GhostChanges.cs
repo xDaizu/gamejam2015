@@ -3,10 +3,11 @@ using System.Collections;
 
 public class GhostChanges : MonoBehaviour {
     public Animator anima;
+    public int forma=0;
 
     // Use this for initialization
     void Start () {
-             anima=gameObject.transform.FindChild("Ghost-Wrapper").GetComponent<Animator>();
+             anima=gameObject.GetComponent<Animator>();
     }
 
     void Update() {
@@ -17,20 +18,24 @@ public class GhostChanges : MonoBehaviour {
         switch(newState)
         {
             case 0:
-                anima.SetInteger("PlayerForm", 0);
+                anima.SetInteger("Cara", 0);
+                forma = 0;
                 Debug.Log("I'm little sexy ghost");
                 break;
             case 1:
-                anima.SetInteger("PlayerForm", 1);
+                anima.SetInteger("Cara", 1);
                 Debug.Log("I'm de SHIELD-WARRIOR");
+                forma = 1;
                 break;
             case 2:
-                anima.SetInteger("PlayerForm", 2);
+                anima.SetInteger("Cara", 2);
                 Debug.Log("My blade is awesome. Also my sword");
+                forma = 2;
                 break;
-            case 4:
-                anima.SetInteger("PlayerForm", 3);
+            case 3:
+                anima.SetInteger("Cara", 3);
                 Debug.Log("Goblin, the Goblin");
+                forma = 3;
                 break;
             default:
                 Debug.Log("EL CAMBIO DE FORMA ES IMPRACTICABLE");
@@ -86,4 +91,6 @@ public class GhostChanges : MonoBehaviour {
         anima.SetBool("Muerte", false);
         anima.SetInteger("PlayerForm", 0);
     }
+
+    public int GetForma() { return forma; }
 }
