@@ -1,0 +1,44 @@
+[
+    {
+	"rooms" : [
+	    {cols: 7, rows: 6},
+	    {cols: 5, rows: 11},
+	    {cols: 7, rows: 5}
+	],
+	"positions" : [
+	    {x: 0, y: 0, z: 0},
+	    {x: 12, y: 0, z: 0},
+	    {x: 0, y: 11, z: 0}
+	],
+	"links" : [
+	    {r1_id: 0, r1_door: {x: 7, y: 2},
+	     r2_id: 1, r2_door: {x: -1, y: 2}},
+	    {r1_id: 1, r1_door: {x: -1, y: 8},
+	     r2_id: 2, r2_door: {x: 7, y: 0}},
+	    {r1_id: 0, r1_door: {x: 3, y: 6},
+	     r2_id: 2, r2_door: {x: 3, y: -1}}
+	]
+    },
+    {
+	"rooms" : [
+	    {cols: 9, rows: 5},
+	    {cols: 9, rows: 5},
+	    {cols: 11, rows: 5},
+	    {cols: 7, rows: 9}
+	],
+	"positions" : [
+	    {x: 0, y: 0, z: 0},
+	    {x: 14, y: 0, z: 0},
+	    {x: 12, y: 10, z: 0},
+	    {x: 0, y: 10, z: 0}
+	],
+	"links" : [
+	    {r1_id: 0, r1_door: {x: 9, y: 2},
+	     r2_id: 1, r2_door: {x: -1, y: 2}},
+	    {r1_id: 1, r1_door: {x: 7, y: 5},
+	     r2_id: 2, r2_door: {x: 9, y: -1}},
+	    {r1_id: 2, r1_door: {x: -1, y: 3},
+	     r2_id: 3, r2_door: {x: 7, y: 3}}
+	]
+    }
+]

@@ -6,7 +6,6 @@ using Random = UnityEngine.Random;      //Tells Random to use the Unity Engine r
 
 public class RoomManager : MonoBehaviour
 {
-    public GameObject exit;                         //Prefab to spawn for exit.
     public GameObject[] floorTiles;                 //Array of floor prefabs.
     public GameObject[] outerWallUpTiles;           //Array of outer tile prefabs.
     public GameObject[] outerWallUpLeftTiles;       //Array of outer tile prefabs.
@@ -18,51 +17,51 @@ public class RoomManager : MonoBehaviour
     public GameObject[] outerWallRightTiles;        //Array of outer tile prefabs.
     public GameObject[] outerWallDoorTiles;
 
-    private Transform roomHolder;                               //A variable to store a reference to the transform of our Board object.
-    private List<Vector3> gridPositions = new List<Vector3>();  //A list of possible locations to place tiles.
+    private GameObject[] Rooms;
 
-    public GameObject[] Rooms;
-
-    public GameObject[] RoomSetup(Room[] roomList, Vector3[] roomPositions, RoomLink[] roomLinks)
+    public GameObject[] RoomSetup(Level level, Transform roomsParent)
     {
-        Rooms = new GameObject[roomList.Length];
-        //List<DoorRef>[] doorRefs = new List<DoorRef>[roomList.Length];
-        foreach (RoomLink l in roomLinks)
+        int num_rooms = level.rooms.Length;
+        Rooms = new GameObject[num_rooms];
+        foreach (RoomLink l in level.links)
         {
-            roomList[l.roomSrc].doorsPosList.Add(l.roomSrcExit);
-            roomList[l.roomDst].doorsPosList.Add(l.roomDstExit);
+            level.rooms[l.roomSrc].doorsPosList.Add(l.roomSrcExit);
+            l.roomSrcFacing = RoomLink.CalculateFacing(l.roomSrcExit, level.rooms[l.roomSrc]);
+            level.rooms[l.roomDst].doorsPosList.Add(l.roomDstExit);
+            l.roomDstFacing = RoomLink.CalculateFacing(l.roomDstExit, level.rooms[l.roomDst]);
         }
 
-        for (int i = 0; i < roomList.Length; i++)
+        for (int i = 0; i < num_rooms; i++)
         {
             Rooms[i] = new GameObject("Room" + i);
-            this.SingleRoomSetup(Rooms[i], roomList[i]);
-            Rooms[i].transform.Translate(roomPositions[i]);
+            Rooms[i].transform.SetParent(roomsParent);
+            this.SingleRoomSetup(Rooms[i], level.rooms[i]);
+            Rooms[i].transform.Translate(level.positions[i]);
         }
-        
-        foreach (RoomLink l in roomLinks)
+
+        foreach (RoomLink l in level.links)
         {
             this.SingleLinkSetup(l, Rooms);
         }
-        
+
         return Rooms;
     }
 
     public void SingleLinkSetup(RoomLink roomLink, GameObject[] roomList)
     {
         int src = roomLink.roomSrc;
-        int src_x = (int)roomLink.roomSrcExit.x;
-        int src_y = (int)roomLink.roomSrcExit.y;
+        Vector3 src_pos = new Vector3(roomLink.roomSrcExit.x, roomLink.roomSrcExit.y, 0f);
+        Quaternion src_rot = RoomLink.GetFacingRotation(roomLink.roomSrcFacing);
         int dst = roomLink.roomDst;
-        int dst_x = (int)roomLink.roomDstExit.x;
-        int dst_y = (int)roomLink.roomDstExit.y;
+        Vector3 dst_pos = new Vector3(roomLink.roomDstExit.x, roomLink.roomDstExit.y, 0f);
+        Quaternion dst_rot = RoomLink.GetFacingRotation(roomLink.roomDstFacing);
 
         GameObject door = outerWallDoorTiles[Random.Range(0, outerWallDoorTiles.Length)];
 
-        GameObject src_door = Instantiate(door, new Vector3(src_x, src_y, 0f), Quaternion.identity) as GameObject;
+        GameObject src_door = Instantiate(door, src_pos, src_rot) as GameObject;
         src_door.transform.SetParent(Rooms[src].transform, false);
 
-        GameObject dst_door = Instantiate(door, new Vector3(dst_x, dst_y, 0f), Quaternion.identity) as GameObject;
+        GameObject dst_door = Instantiate(door, dst_pos, dst_rot) as GameObject;
         dst_door.transform.SetParent(Rooms[dst].transform, false);
 
         setDoorLink(src_door, dst_door);
@@ -90,7 +89,8 @@ public class RoomManager : MonoBehaviour
                 GameObject toInstantiate;
                 Vector2 pos = new Vector2(x, y);
 
-                if (!room.doorsPosList.Contains(pos)) {
+                if (!room.doorsPosList.Contains(pos))
+                {
                     //Choose a random tile from our array of floor tile prefabs and prepare to instantiate it.
                     toInstantiate = floorTiles[Random.Range(0, floorTiles.Length)];
 

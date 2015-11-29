@@ -13,14 +13,4 @@ public class Room {
         this.rows = r;
         doorsPosList = new List<Vector2>();
     }
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }
