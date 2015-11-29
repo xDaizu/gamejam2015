@@ -29,28 +29,36 @@ public class ControlPersonaje : MonoBehaviour
         if (!facingRight)
         {
             transform.localScale = new Vector2(-(Mathf.Abs(transform.localScale.x)), transform.localScale.y);
-        }
-        else
-        {
+        }else{
             transform.localScale = new Vector2(Mathf.Abs(transform.localScale.x), transform.localScale.y);
         }
+
         v = Input.GetAxis("Vertical");
         myRigidBody.velocity = new Vector3(h * speed, v * speed, 0);
+
         if (Input.GetButton("Fire1"))
         {
             animator.SetBool("Action", true);
         }
-        if (Input.GetButton("Fire2"))
-        {
-            animator.SetBool("Poseer", true);
-            gameObject.transform.FindChild("Ghost-Wrapper").GetComponent<Posesion>().Poseer();
-        }
+
         if (Input.GetButtonUp("Fire2"))
         {
             animator.SetBool("RobaEnergia", false);
         }
 
-    }
+        if (Input.GetKey("e"))
+        {
+            if (gameObject.transform.FindChild("Ghost-Wrapper").GetComponent<Posesion>().GetCorpse()>0)
+            {
+                animator.SetBool("Poseer", true);
+                gameObject.transform.FindChild("Ghost-Wrapper").GetComponent<Posesion>().Poseer();
+            }   
+        }
 
- 
+        if (Input.GetKey("q"))
+        {
+            animator.SetBool("Poseer", false);
+            gameObject.transform.FindChild("Ghost-Wrapper").GetComponent<Posesion>().Desposeer();
+        }
+    }
 }

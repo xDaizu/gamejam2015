@@ -35,4 +35,14 @@ public class Posesion : MonoBehaviour {
         }
     }
 
+    public void Desposeer()
+    {
+        int formaActual = gameObject.GetComponent<GhostChanges>().GetForma();
+        if (formaActual != 0)
+        {
+            gameObject.GetComponent<GhostChanges>().SetState(0);
+        }
+    }
+
+    public int GetCorpse() { return corpseType; }
 }

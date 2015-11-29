@@ -18,22 +18,26 @@ public class GhostChanges : MonoBehaviour {
         switch(newState)
         {
             case 0:
-                anima.SetInteger("Cara", 0);
+                anima.SetBool("Muerte",true);
+                anima.SetInteger("PlayerForm", 0);
                 forma = 0;
                 Debug.Log("I'm little sexy ghost");
                 break;
             case 1:
-                anima.SetInteger("Cara", 1);
+                anima.SetBool("Muerte", false);
+                anima.SetInteger("PlayerForm", 1);
                 Debug.Log("I'm de SHIELD-WARRIOR");
                 forma = 1;
                 break;
             case 2:
-                anima.SetInteger("Cara", 2);
+                anima.SetBool("Muerte", false);
+                anima.SetInteger("PlayerForm", 2);
                 Debug.Log("My blade is awesome. Also my sword");
                 forma = 2;
                 break;
             case 3:
-                anima.SetInteger("Cara", 3);
+                anima.SetBool("Muerte", false);
+                anima.SetInteger("PlayerForm", 3);
                 Debug.Log("Goblin, the Goblin");
                 forma = 3;
                 break;
