@@ -32,4 +32,31 @@ public class GhostChanges : MonoBehaviour {
                 break;
         }
     }
+
+    public void SetAction(int action) {
+        switch (action)
+        {
+            case 0:
+                anima.SetBool("Andar", true);
+                anima.SetBool("Action", false);
+                anima.SetBool("Muerte", false);
+                Debug.Log("Walking on the moon");
+                break;
+            case 1:
+                anima.SetBool("Andar", false);
+                anima.SetBool("Action", true);
+                anima.SetBool("Muerte", false);
+                Debug.Log("I'm making my action");
+                break;
+            case 3:
+                anima.SetBool("Andar", false);
+                anima.SetBool("Action", false);
+                anima.SetBool("Muerte", true);
+                Debug.Log("Bye Bye");
+                break;
+            default:
+                Debug.Log("Las acciones me confunden");
+                break;
+        }
+    }
 }
