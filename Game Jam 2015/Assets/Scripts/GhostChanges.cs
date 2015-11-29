@@ -59,4 +59,7 @@ public class GhostChanges : MonoBehaviour {
                 break;
         }
     }
+    public void desactivarAccion() {
+        anima.SetBool("Action", false);
+    } 
 }
