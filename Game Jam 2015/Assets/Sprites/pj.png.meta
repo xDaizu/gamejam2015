@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f67780a07cd9a434284e44485b45a12d
-timeCreated: 1448749664
+timeCreated: 1448758280
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -70,6 +70,9 @@ TextureImporter:
     21300126: pj_40
     21300128: pj_41
     21300130: pj_42
+    21300132: pj_43
+    21300134: pj_44
+    21300136: pj_45
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -734,7 +737,7 @@ TextureImporter:
         width: 7
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: pj_39
       rect:
@@ -744,7 +747,7 @@ TextureImporter:
         width: 138
         height: 151
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: pj_40
       rect:
@@ -754,7 +757,7 @@ TextureImporter:
         width: 238
         height: 288
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: pj_41
       rect:
@@ -773,6 +776,36 @@ TextureImporter:
         y: 592
         width: 4
         height: 5
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_43
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 274
+        width: 273
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_44
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 188
+        width: 279
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_45
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 25
+        width: 291
+        height: 233
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
