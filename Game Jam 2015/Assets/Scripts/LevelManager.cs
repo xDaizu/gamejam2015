@@ -126,8 +126,9 @@ public class LevelManager : MonoBehaviour
             //Choose a random tile from tileArray and assign it to tileChoice
             GameObject tileChoice = tileArray[Random.Range(0, tileArray.Length)];
 
+            Debug.Log("Rotando");
             //Instantiate tileChoice at the position returned by RandomPosition with no change in rotation
-            Instantiate(tileChoice, randomPosition, Quaternion.identity);
+            Instantiate(tileChoice, randomPosition, tileChoice.transform.rotation);
         }
     }
 

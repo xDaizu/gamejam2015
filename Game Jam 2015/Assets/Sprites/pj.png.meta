@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f67780a07cd9a434284e44485b45a12d
-timeCreated: 1448714978
+timeCreated: 1448749664
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -45,6 +45,31 @@ TextureImporter:
     21300076: Cuerpo
     21300078: head
     21300080: head.damage
+    21300082: shield_front
+    21300084: shield_side
+    21300086: shield_back
+    21300088: pj_21
+    21300090: pj_22
+    21300092: pj_23
+    21300094: pj_24
+    21300096: pj_25
+    21300098: pj_26
+    21300100: pj_27
+    21300102: pj_28
+    21300104: pj_29
+    21300106: pj_30
+    21300108: pj_31
+    21300110: pj_32
+    21300112: pj_33
+    21300114: pj_34
+    21300116: pj_35
+    21300118: pj_36
+    21300120: pj_37
+    21300122: pj_38
+    21300124: pj_39
+    21300126: pj_40
+    21300128: pj_41
+    21300130: pj_42
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -485,9 +510,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 221
-        y: 1164
+        y: 1141
         width: 162
-        height: 247
+        height: 307
       alignment: 9
       pivot: {x: .504571259, y: .389075637}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -495,11 +520,261 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 918
+        y: 885
         width: 162
-        height: 247
+        height: 306
       alignment: 9
       pivot: {x: .504571259, y: .389075637}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shield_front
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 1195
+        width: 187
+        height: 189
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shield_side
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 1363
+        width: 70
+        height: 202
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shield_back
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 1554
+        width: 188
+        height: 188
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_21
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 975
+        width: 163
+        height: 182
+      alignment: 9
+      pivot: {x: .538527966, y: .357046932}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_22
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 984
+        width: 58
+        height: 139
+      alignment: 9
+      pivot: {x: .418598562, y: .866077423}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_23
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 984
+        width: 60
+        height: 143
+      alignment: 9
+      pivot: {x: .546938062, y: .855981767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_24
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 894
+        width: 60
+        height: 58
+      alignment: 9
+      pivot: {x: .508021057, y: .807019472}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_25
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 879
+        width: 217
+        height: 308
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_26
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 865
+        width: 217
+        height: 308
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_27
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 866
+        width: 217
+        height: 308
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_28
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 1173
+        width: 50
+        height: 79
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_29
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 638
+        width: 368
+        height: 219
+      alignment: 9
+      pivot: {x: .497930318, y: .533038139}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_30
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 643
+        width: 366
+        height: 218
+      alignment: 9
+      pivot: {x: .5, y: .538080633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_31
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 648
+        width: 366
+        height: 218
+      alignment: 9
+      pivot: {x: .5, y: .538080633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_32
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 481
+        width: 60
+        height: 58
+      alignment: 9
+      pivot: {x: .508021057, y: .807019472}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_33
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 483
+        width: 60
+        height: 58
+      alignment: 9
+      pivot: {x: .508021057, y: .807019472}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_34
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 461
+        width: 60
+        height: 143
+      alignment: 9
+      pivot: {x: .546938062, y: .855981767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_35
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 461
+        width: 60
+        height: 143
+      alignment: 9
+      pivot: {x: .414493293, y: .867095709}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_36
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 437
+        width: 125
+        height: 174
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_37
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 436
+        width: 125
+        height: 174
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_38
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1985
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_39
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 1317
+        width: 138
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_40
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 1208
+        width: 238
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_41
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 327
+        width: 511
+        height: 497
+      alignment: 9
+      pivot: {x: .505753577, y: .990973353}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pj_42
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 592
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

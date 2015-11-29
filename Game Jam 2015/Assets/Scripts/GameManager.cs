@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance = null;              //Static instance of GameManager which allows it to be accessed by any other script.
     private LevelManager boardScript;                       //Store a reference to our LevelManager which will set up the level.
-    private int level = 3;                                  //Current level number, expressed in game as "Day 1".
+    private int level = 0;                                  //Current level number, expressed in game as "Day 1".
 
     //Awake is always called before any Start functions
     void Awake()
