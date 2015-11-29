@@ -29,6 +29,7 @@ public class LevelManager : MonoBehaviour
     private JSONNode levelStruct;
     private Level[] levels;
 
+    private GameObject playerWrapper;
     private Transform boardHolder;                               //A variable to store a reference to the transform of our Board object.
     private List<Vector3> gridPositions = new List<Vector3>();   //A list of possible locations to place tiles.
 
@@ -57,6 +58,12 @@ public class LevelManager : MonoBehaviour
                 room.transform.SetParent(boardHolder, false);
             }
             roomManager.transform.SetParent(boardHolder);
+
+            // Retrieve the player and set it to the start position
+            this.playerWrapper = GameObject.Find("PlayerWrapper");
+            this.playerWrapper.SetActive(false);
+            this.playerWrapper.transform.position = currentLevel.playerStart;
+            this.playerWrapper.SetActive(true);
         }
     }
 

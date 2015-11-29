@@ -8,7 +8,7 @@ public class DoorTrigger : MonoBehaviour
     private static bool justTP;
 
 
-    IEnumerator OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         //Debug.Log("Door OnTriggerEnter2D, name="+other.gameObject.name);
 
@@ -16,11 +16,11 @@ public class DoorTrigger : MonoBehaviour
         {
             Vector3 TargetPoint = exitDoor.transform.Find("SpawnPoint").gameObject.transform.position;
             Debug.Log("Tag Player detectado, moviendo a x=" + TargetPoint.x + ", y= " + TargetPoint.y);
-            GameObject playerToMove = other.gameObject;
+            GameObject playerToMove = other.gameObject.transform.parent.gameObject;
 
             playerToMove.SetActive(false);
             playerToMove.transform.position = TargetPoint;
-            yield return new WaitForSeconds(0.01f);
+            // yield return new WaitForSeconds(0.01f);
             playerToMove.SetActive(true);
 
         }

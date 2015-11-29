@@ -1,5 +1,9 @@
 [
     {
+	"player" : {
+	    "start" : { room: 0, x: 0, y: 0 },
+	    "goal" : { room: 2, x: 0, y: 0 }
+	},
 	"rooms" : [
 	    {cols: 7, rows: 6},
 	    {cols: 5, rows: 11},
@@ -20,6 +24,10 @@
 	]
     },
     {
+	"player" : {
+	    "start" : { room: 0, x: 2, y: 2 },
+	    "goal" : { room: 3, x: 0, y: 0 }
+	},
 	"rooms" : [
 	    {cols: 9, rows: 5},
 	    {cols: 9, rows: 5},

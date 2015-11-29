@@ -70,10 +70,7 @@ public class RoomManager : MonoBehaviour
 
     private void setDoorLink(GameObject doorObject, GameObject destiny)
     {
-        BoxCollider2D src_bc2d = doorObject.AddComponent<BoxCollider2D>();
-        src_bc2d.isTrigger = true;
-        src_bc2d.size = new Vector2(1f, 1f);
-        DoorTrigger src_dtscript = doorObject.AddComponent<DoorTrigger>();
+        DoorTrigger src_dtscript = doorObject.GetComponent<DoorTrigger>();
         src_dtscript.exitDoor = destiny;
     }
 

@@ -7,12 +7,15 @@ public class Level
     public Room[] rooms;
     public Vector3[] positions;
     public RoomLink[] links;
+    public Vector3 playerStart;
+    public Vector3 playerGoal;
 
     public Level(JSONNode docLevel)
     {
         initRooms(docLevel["rooms"]);
         initPositions(docLevel["positions"]);
         initLinks(docLevel["links"]);
+        initPlayer(docLevel["player"]);
     }
 
     void initRooms(JSONNode docRooms)
@@ -52,5 +55,19 @@ public class Level
                 new Vector2(docLinks[i]["r2_door"]["x"].AsFloat,
                             docLinks[i]["r2_door"]["y"].AsFloat));
         }
+    }
+
+    void initPlayer(JSONNode docPlayer)
+    {
+        this.playerStart = getRoomPos(docPlayer["start"]);
+        this.playerGoal = getRoomPos(docPlayer["goal"]);
+    }
+
+    // Función auxiliar para initPlayer
+    private Vector3 getRoomPos(JSONNode pos)
+    {
+        Vector3 offset = new Vector3(pos["x"].AsFloat, pos["y"].AsFloat, 0f);
+        Vector3 globalPos = this.positions[pos["room"].AsInt] + offset;
+        return globalPos;
     }
 }
