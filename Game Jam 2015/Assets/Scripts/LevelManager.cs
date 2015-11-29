@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;       //Allows us to use Lists.
 using Random = UnityEngine.Random;      //Tells Random to use the Unity Engine random number generator.
-
+using SimpleJson;
 
 public class LevelManager : MonoBehaviour
 {
@@ -63,8 +63,8 @@ public class LevelManager : MonoBehaviour
     {
         roomPositions = new Vector3[roomList.Length];
         roomPositions[0] = new Vector3(0, 0, 0);
-        roomPositions[1] = new Vector3(7+3, 0, 0);
-        roomPositions[2] = new Vector3(0, 6+3, 0);
+        roomPositions[1] = new Vector3(7+4, 0, 0);
+        roomPositions[2] = new Vector3(0, 6+4, 0);
     }
 
     void initRoomLinks()
