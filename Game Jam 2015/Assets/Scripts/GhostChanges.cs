@@ -5,7 +5,7 @@ public class GhostChanges : MonoBehaviour {
     public Animator anima;
     // Use this for initialization
     void Start () {
-             anima=gameObject.GetComponent<Animator>();
+             anima=gameObject.transform.FindChild("Ghost-Wrapper").GetComponent<Animator>();
     }
 
     void Update() {
@@ -69,11 +69,14 @@ public class GhostChanges : MonoBehaviour {
 
     public void controlAndar()
     {
-        if (gameObject.GetComponent<ControlPersonaje>().h != 0 || gameObject.GetComponent<ControlPersonaje>().v != 0)
+  
+        if (gameObject.transform.parent.GetComponent<ControlPersonaje>().h != 0f || gameObject.transform.parent.GetComponent<ControlPersonaje>().v != 0f)
         {
+            print("Anda");
             anima.SetBool("Andar", true);
         }
         else {
+            print("Quieto");
             anima.SetBool("Andar", false);
         }
     }

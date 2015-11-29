@@ -36,18 +36,18 @@ public class ControlPersonaje : MonoBehaviour
         }
         v = Input.GetAxis("Vertical");
         myRigidBody.velocity = new Vector3(h * speed, v * speed, 0);
-        if (Input.GetButton("Fire1"))
-        {
-            animator.SetBool("Attack", true);
-        }
-        if (Input.GetButton("Fire2"))
-        {
-            animator.SetBool("RobaEnergia", true);
-        }
-        if (Input.GetButtonUp("Fire2"))
-        {
-            animator.SetBool("RobaEnergia", false);
-        }
+        //if (Input.GetButton("Fire1"))
+        //{
+        //    animator.SetBool("Attack", true);
+        //}
+        //if (Input.GetButton("Fire2"))
+        //{
+        //    animator.SetBool("RobaEnergia", true);
+        //}
+        //if (Input.GetButtonUp("Fire2"))
+        //{
+        //    animator.SetBool("RobaEnergia", false);
+        //}
 
     }
 
