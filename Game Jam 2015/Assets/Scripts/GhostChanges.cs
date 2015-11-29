@@ -82,11 +82,11 @@ public class GhostChanges : MonoBehaviour {
   
         if (gameObject.transform.parent.GetComponent<ControlPersonaje>().h != 0f || gameObject.transform.parent.GetComponent<ControlPersonaje>().v != 0f)
         {
-            print("Anda");
+            //print("Anda");
             anima.SetBool("Andar", true);
         }
         else {
-            print("Quieto");
+            //print("Quieto");
             anima.SetBool("Andar", false);
         }
     }

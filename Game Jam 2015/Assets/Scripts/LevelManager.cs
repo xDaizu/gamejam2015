@@ -62,6 +62,7 @@ public class LevelManager : MonoBehaviour
             // Retrieve the player and set it to the start position
             this.playerWrapper = GameObject.Find("PlayerWrapper");
             this.playerWrapper.SetActive(false);
+            Debug.Log("Colocando al personaje eeeeen: " + currentLevel.playerStart);
             this.playerWrapper.transform.position = currentLevel.playerStart;
             this.playerWrapper.SetActive(true);
         }

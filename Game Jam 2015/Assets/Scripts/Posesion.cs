@@ -2,15 +2,19 @@
 using System.Collections;
 
 public class Posesion : MonoBehaviour {
+
+    private GameObject selectedCorpse;
     public int corpseType;
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "CorpseGoblin") {
+            this.selectedCorpse = other.gameObject;
             this.corpseType = 3;
         }
         if (other.tag == "CorpseShield")
         {
             this.corpseType = 1;
+            this.selectedCorpse = other.gameObject;
         }
     }
 
@@ -32,6 +36,7 @@ public class Posesion : MonoBehaviour {
         if (formaActual == 0 && corpseType != 0)
         {
             gameObject.GetComponent<GhostChanges>().SetState(corpseType);
+            selectedCorpse.SetActive(false);
         }
     }
 

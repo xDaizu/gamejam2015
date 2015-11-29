@@ -13,6 +13,7 @@ public class ControlPersonaje : MonoBehaviour
     //ANIMACIONES
     //Animador del objeto
     public Animator animator;
+    public GameObject energyBall;
     // Use this for initialization
     void Start()
     {
@@ -36,17 +37,27 @@ public class ControlPersonaje : MonoBehaviour
         v = Input.GetAxis("Vertical");
         myRigidBody.velocity = new Vector3(h * speed, v * speed, 0);
 
-        if (Input.GetButton("Fire1"))
+        //if (Input.GetButton("Fire1"))
+        //{
+        //    animator.SetBool("Action", true);
+        //}
+
+
+        if (Input.GetButtonDown("Fire2"))
         {
-            animator.SetBool("Action", true);
+            animator.SetBool("RobaEnergia", true);
+            energyBall.SetActive(true);
+
         }
 
         if (Input.GetButtonUp("Fire2"))
         {
             animator.SetBool("RobaEnergia", false);
+            energyBall.SetActive(false);
+
         }
 
-        if (Input.GetKey("e"))
+        if (Input.GetButton("Fire1"))
         {
             if (gameObject.transform.FindChild("Ghost-Wrapper").GetComponent<Posesion>().GetCorpse()>0)
             {

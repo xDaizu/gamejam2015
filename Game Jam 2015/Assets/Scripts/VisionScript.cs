@@ -40,10 +40,10 @@ public class VisionScript : MonoBehaviour
 
     public void OnTriggerStay2D(Collider2D other)
     {
-        Debug.Log("TriggerStay: "+other.tag+" time: "+Time.time);
+        //Debug.Log("TriggerStay: "+other.tag+" time: "+Time.time);
         if (other.tag == "Ghost")
         {
-            Debug.Log("OnTriggerStay2D");
+            //Debug.Log("OnTriggerStay2D");
             GameObject player = other.gameObject;
             enemyScript.playerSighting(player);
 

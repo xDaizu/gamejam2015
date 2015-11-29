@@ -21,12 +21,15 @@ public class Enemy : MonoBehaviour
     public int searchRotateDirection = 1;
     public float searchSpeed = 10f;
 
+    private GameObject wrapper;
+
     // Use this for initialization
     void Start()
     {
         anima = gameObject.GetComponent<Animator>();
         visionField = gameObject.transform.Find("Vision").gameObject;
         visionFieldScript = visionField.GetComponent<VisionScript>();
+        wrapper = gameObject.transform.parent.gameObject;
     }
 
     // Update is called once per frame
@@ -87,7 +90,9 @@ public class Enemy : MonoBehaviour
 
         distance = Vector3.Distance(gameObject.transform.position, target.transform.position);
         anima.SetFloat("Velocidad", speed);
-        gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, target.transform.position, speed * Time.deltaTime);
+        wrapper.transform.position = Vector3.MoveTowards(gameObject.transform.position, target.transform.position, speed * Time.deltaTime);
+
+        //gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, target.transform.position, speed * Time.deltaTime);
         //gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.MoveTowards(gameObject.transform.position, target.transform.position, speed * Time.deltaTime);
 
 
@@ -112,7 +117,7 @@ public class Enemy : MonoBehaviour
 
     public void playerSighting(GameObject player)
     {
-        Debug.Log("ENEMIGO: 'I'm seeing you!!'   Time:" + Time.time);
+        //Debug.Log("ENEMIGO: 'I'm seeing you!!'   Time:" + Time.time);
         this.behaviourMode = "aggresive";
         this.target = player;
     }
