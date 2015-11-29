@@ -22,24 +22,15 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    public Room[] roomList;
+    public Vector3[] roomPositions;
+    public RoomLink[] roomLinks;
+    public RoomManager roomManager;
 
-    public int columns = 8;                                         //Number of columns in our game board.
-    public int rows = 8;                                            //Number of rows in our game board.
-    public GameObject exit;                                         //Prefab to spawn for exit.
-    public GameObject[] floorTiles;                                 //Array of floor prefabs.
-    public GameObject[] outerWallUpTiles;                             //Array of outer tile prefabs.
-    public GameObject[] outerWallUpLeftTiles;                             //Array of outer tile prefabs.
-    public GameObject[] outerWallUpRightTiles;                             //Array of outer tile prefabs.
-    public GameObject[] outerWallDownLeftTiles;                             //Array of outer tile prefabs.
-    public GameObject[] outerWallDownRightTiles;                             //Array of outer tile prefabs.
-    public GameObject[] outerWallDownTiles;                             //Array of outer tile prefabs.
-    public GameObject[] outerWallLeftTiles;                             //Array of outer tile prefabs.
-    public GameObject[] outerWallRightTiles;                             //Array of outer tile prefabs.
-
-    private Transform boardHolder;                                  //A variable to store a reference to the transform of our Board object.
+    private Transform boardHolder;                               //A variable to store a reference to the transform of our Board object.
     private List<Vector3> gridPositions = new List<Vector3>();   //A list of possible locations to place tiles.
 
-
+    /*
     //Clears our list gridPositions and prepares it to generate a new board.
     void InitialiseList()
     {
@@ -57,7 +48,32 @@ public class LevelManager : MonoBehaviour
             }
         }
     }
+    */
+    void initRoomList()
+    {
+        int room_num = 3;
+        roomList = new Room[room_num];
 
+        roomList[0] = new Room(7, 6);
+        roomList[1] = new Room(5, 11);
+        roomList[2] = new Room(7, 5);
+    }
+
+    void initRoomPositions()
+    {
+        roomPositions = new Vector3[roomList.Length];
+        roomPositions[0] = new Vector3(0, 0, 0);
+        roomPositions[1] = new Vector3(7+3, 0, 0);
+        roomPositions[2] = new Vector3(0, 6+3, 0);
+    }
+
+    void initRoomLinks()
+    {
+        roomLinks = new RoomLink[3];
+        roomLinks[0] = new RoomLink(0, new Vector2(7, 2), 1, new Vector2(-1, 2));
+        roomLinks[1] = new RoomLink(1, new Vector2(-1, 8), 2, new Vector2(7, 0));
+        roomLinks[2] = new RoomLink(0, new Vector2(3, 6), 2, new Vector2(3, -1));
+    }
 
     //Sets up the outer walls and floor (background) of the game board.
     void BoardSetup()
@@ -65,70 +81,16 @@ public class LevelManager : MonoBehaviour
         //Instantiate Board and set boardHolder to its transform.
         boardHolder = new GameObject("Board").transform;
 
-        //Loop along x axis, starting from -1 (to fill corner) with floor or outerwall edge tiles.
-        for (int x = -1; x < columns + 1; x++)
+        this.initRoomList();
+        this.initRoomPositions();
+        this.initRoomLinks();
+
+        GameObject[] Rooms = roomManager.RoomSetup(roomList, roomPositions, roomLinks);
+        foreach (GameObject room in Rooms)
         {
-            //Loop along y axis, starting from -1 to place floor or outerwall tiles.
-            for (int y = -1; y < rows + 1; y++)
-            {
-                //Choose a random tile from our array of floor tile prefabs and prepare to instantiate it.
-                GameObject toInstantiate = floorTiles[Random.Range(0, floorTiles.Length)];
-
-                //Check if we current position is at board edge, if so choose a random outer wall prefab from our array of outer wall tiles.
-                if (x == -1 || x == columns || y == -1 || y == rows)
-                {
-                    Debug.Log("x: "+x+"y: "+y);
-                    if (y == -1)
-                    {
-                        if (x == -1)
-                        {
-                            toInstantiate = outerWallDownLeftTiles[Random.Range(0, outerWallDownLeftTiles.Length)];
-                        }
-                        else if (x == columns)
-                        {
-                            toInstantiate = outerWallDownRightTiles[Random.Range(0, outerWallDownRightTiles.Length)];
-                        }
-                        else
-                        {
-                            toInstantiate = outerWallDownTiles[Random.Range(0, outerWallDownTiles.Length)];
-                        }
-
-                    }
-                    else if (y == rows)
-                    {
-                        if (x == -1)
-                        {
-                            toInstantiate = outerWallUpLeftTiles[Random.Range(0, outerWallUpLeftTiles.Length)];
-                        }
-                        else if (x == columns)
-                        {
-                            toInstantiate = outerWallUpRightTiles[Random.Range(0, outerWallUpRightTiles.Length)];
-                        }
-                        else
-                        {
-                            toInstantiate = outerWallUpTiles[Random.Range(0, outerWallUpTiles.Length)];
-                        }
-                    }
-                    else {
-                        if (x == -1)
-                        {
-                            toInstantiate = outerWallLeftTiles[Random.Range(0, outerWallUpLeftTiles.Length)];
-                        }
-                        else if (x == columns) {
-                            toInstantiate = outerWallRightTiles[Random.Range(0, outerWallUpLeftTiles.Length)];
-
-                        }
-                    }
-
-                }
-                //Instantiate the GameObject instance using the prefab chosen for toInstantiate at the Vector3 corresponding to current grid position in loop, cast it to GameObject.
-                GameObject instance =
-                    Instantiate(toInstantiate, new Vector3(x, y, 0f), Quaternion.identity) as GameObject;
-
-                //Set the parent of our newly instantiated object instance to boardHolder, this is just organizational to avoid cluttering hierarchy.
-                instance.transform.SetParent(boardHolder);
-            }
+            room.transform.SetParent(boardHolder, false);
         }
+        roomManager.transform.SetParent(boardHolder);
     }
 
 
@@ -177,7 +139,7 @@ public class LevelManager : MonoBehaviour
         BoardSetup();
 
         //Reset our list of gridpositions.
-        InitialiseList();
+        // InitialiseList();
 
         //Determine number of enemies based on current level number, based on a logarithmic progression
         //int enemyCount = (int)Mathf.Log(level, 2f);
