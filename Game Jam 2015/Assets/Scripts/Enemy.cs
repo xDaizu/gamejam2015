@@ -18,8 +18,13 @@ public class Enemy : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         distance = Vector3.Distance(gameObject.transform.position, objeto.transform.position);
-        if (aggresiveMode) {
+        if (aggresiveMode)
+        {
             this.aggresiveAction();
+        }
+        if (!aggresiveMode)
+        {
+            anima.SetFloat("Idle", 0f);
         }
        
     }
@@ -29,7 +34,6 @@ public class Enemy : MonoBehaviour {
         {
             anima.SetFloat("Velocidad", speed);
             gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, target.transform.position, speed * Time.deltaTime);
-            //gameObject.transform.position += transform.forward * speed * Time.deltaTime;
         }
         if (distance <= radioAtaque)
         {
