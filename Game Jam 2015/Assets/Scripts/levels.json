@@ -1,7 +1,7 @@
 [
     {
 	"player" : {
-	    "start" : { room: 0, x: 0, y: 0 },
+	    "start" : { room: 0, x: 0, y: 2 },
 	    "goal" : { room: 2, x: 0, y: 0 }
 	},
 	"rooms" : [

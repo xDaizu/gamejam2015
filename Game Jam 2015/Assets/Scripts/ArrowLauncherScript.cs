@@ -7,12 +7,15 @@ public class ArrowLauncherScript : MonoBehaviour
     private float timeLastShot;
     public float shootPeriod;
     GameManager gameManager;
-    public GameObject arrow;
+    ObjectPooler objectPooler;
+
+
     public Vector2 shootDirection;
     // Use this for initialization
     void Start()
     {
-        GameManager gameManager = GameManager.instance;
+        gameManager = GameManager.instance;
+        ObjectPooler objectPooler = gameManager.gameObject.GetComponent<ObjectPooler>();
         timeLastShot = 0f;
     }
 
@@ -20,7 +23,8 @@ public class ArrowLauncherScript : MonoBehaviour
     {
         Debug.Log("Shoot");
         //TODO: Get flecha del pool.
-        arrow.transform.position=new Vector3(0, 0, 0);
+        GameObject arrow = objectPooler.getArrow();
+        arrow.transform.position = new Vector3(0, 0, 0);
         arrow.GetComponent<Rigidbody2D>().velocity = shootDirection;
         this.timeLastShot = Time.time;
     }

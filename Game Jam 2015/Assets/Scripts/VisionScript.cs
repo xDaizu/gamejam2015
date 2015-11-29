@@ -40,8 +40,8 @@ public class VisionScript : MonoBehaviour
 
     public void OnTriggerStay2D(Collider2D other)
     {
-
-        if (other.tag == "Player")
+        Debug.Log("TriggerStay: "+other.tag+" time: "+Time.time);
+        if (other.tag == "Ghost")
         {
             Debug.Log("OnTriggerStay2D");
             GameObject player = other.gameObject;
@@ -55,7 +55,7 @@ public class VisionScript : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Ghost")
         {
             GameObject player = other.gameObject;
             enemyScript.playerSighted(player);
@@ -65,7 +65,7 @@ public class VisionScript : MonoBehaviour
 
     public void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Ghost")
         {
             GameObject player = other.gameObject;
             enemyScript.playerLost(player);

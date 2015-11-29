@@ -88,6 +88,7 @@ public class Enemy : MonoBehaviour
         distance = Vector3.Distance(gameObject.transform.position, target.transform.position);
         anima.SetFloat("Velocidad", speed);
         gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, target.transform.position, speed * Time.deltaTime);
+        //gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.MoveTowards(gameObject.transform.position, target.transform.position, speed * Time.deltaTime);
 
 
 
